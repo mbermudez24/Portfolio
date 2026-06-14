@@ -1,10 +1,10 @@
 :root {
-    --primary: hsl(207, 90%, 54%);
-    --primary-dark: rgb(26, 122, 198);
-    --secondary: hsl(200, 100%, 45%);
-    --secondary-dark: hsl(200, 100%, 42%);
-    --white: #f5f9fa;
-    --white2: #ebf3f5;
+    --primary: hsl(222, 47%, 18%);
+    --primary-dark: hsl(222, 50%, 12%);
+    --secondary: hsl(190, 100%, 50%);
+    --secondary-dark: hsl(195, 100%, 40%);
+    --white: #f8fafc;
+    --white2: #f1f5f9;
     --gray: #e1e4e5;
     --gray2: #c0c6c9;
     --gray3: #4b4c4d;
