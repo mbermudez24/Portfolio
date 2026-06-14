@@ -3,18 +3,36 @@ html {
 }
 
 section {
-    padding-top: 3rem;
+    padding-top: 2rem;
     padding-bottom: 3rem;
 }
 
-#navbar, section.even {
-    background: linear-gradient(var(--primary),var(--primary-dark));
+#navbar,
+section.even {
+    background: linear-gradient(var(--primary), var(--primary-dark));
 }
 
 footer {
-    background: linear-gradient(var(--black), var(--black2));
-    padding: 2rem 0;
+    background-color: #0b111e;
+    /* Un gris-azul casi negro que cierra la página con elegancia */
+    padding: 1.5rem 0;
+    /* Espacio para que el texto respire */
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    /* Línea divisoria muy sutil */
 }
+
+footer small {
+    color: var(--white2);
+    /* Tu variable de gris claro */
+    font-size: 0.85rem;
+    /* Tamaño compacto y profesional */
+    opacity: 0.6;
+    /* Lo suaviza para que sea legible pero discreto */
+    letter-spacing: 0.5px;
+    display: inline-block;
+}
+
 
 hr {
     height: 0.1rem;
@@ -24,7 +42,7 @@ hr {
 }
 
 section.even hr {
-        background-image: linear-gradient(to right, rgba(0, 0, 0, 0), var(--white), rgba(0, 0, 0, 0));
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), var(--white), rgba(0, 0, 0, 0));
 }
 
 section hr {
