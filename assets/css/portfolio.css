@@ -8,6 +8,7 @@
     padding: 0;
     border: none;
     cursor: zoom-in;
+    border-radius: 12px;
 }
 
 #portfolio img {
@@ -63,7 +64,7 @@
     z-index: 2;
     left: 50%;
     top: 0%;
-    transform: translate(-40%, -50%); 
+    transform: translate(-40%, -50%);
     opacity: 0;
     transition: top ease .3s, opacity ease .3s;
 }
@@ -72,10 +73,3 @@
     top: 40%;
     opacity: .75;
 }
-
-
-
-
-
-
-
