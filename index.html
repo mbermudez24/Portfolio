@@ -1,11 +1,11 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Manuel Bermúdez | Portfolio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
         integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -20,7 +20,6 @@
     <link rel="stylesheet" type="text/css" href="assets/css/skillset.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/experience.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/contact.css" />
-
 </head>
 
 <body>
@@ -28,7 +27,7 @@
         <img class="circle" src="assets/img/logos/large.png" alt="logo large" />
         <h1>Manuel Alejandro Bermúdez Giraldo</h1>
         <hr />
-        <h2>Frontend Developer</h2>
+        <h2>Systems Engineer</h2>
         <video autoplay loop muted>
             <source src="assets/video/hero.mp4" />
         </video>
@@ -125,10 +124,11 @@
             <h3>Experience</h3>
             <hr />
             <div>
-                <!-- <a>
-                    <img src="assets/img/experience/1.svg" />
-                    <h4>Trabajo 1</h4>
+                <a>
+                    <img src="assets/img/experience/davinci.svg" />
+                    <h4>Davinci Technologies</h4>
                 </a>
+                <!--
                 <a>
                     <img src="assets/img/experience/2.svg" />
                     <h4>Trabajo 2</h4>
@@ -146,30 +146,27 @@
         <section id="contact" class="even">
             <h3>Contact</h3>
             <hr />
-            <!-- Utiliza Formspree -->
-            <form action="" method="POST">
-                <label>
-                    Your email:
-                    <input type="email" name="_replyto">
-                </label>
-                <label>
-                    Your message:
-                    <textarea name="message"></textarea>
-                </label>
-                <button type="submit">Send</button>
-            </form>
+
+            <!-- Contenedor con tus datos directos -->
+            <div class="contact__info">
+                <p>¿Tienes un proyecto en mente o quieres charlar? ¡Escríbeme!</p>
+                <a href="mailto:tu-correo@email.com" class="contact__email">tu-correo@email.com</a>
+            </div>
+
+            <!-- Redes sociales unificadas -->
             <nav id="social-media">
-                <a href="https://www.linkedin.com/in/mbg24/">
-                    <img id="linkedin" src="assets/img/social/linkedin.png">
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+                    <img id="linkedin" src="assets/img/social/LinkedIn.svg" alt="LinkedIn" />
                 </a>
-                <a href="https://github.com/mbermudez24">
-                    <img id="github" src="assets/img/social/github.png">
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+                    <img id="github" src="assets/img/social/GitHub_Black.svg" alt="GitHub" />
                 </a>
             </nav>
         </section>
     </main>
     <footer>
-        <small>Developed and designed by Manuel Bermúdez. &copy;2023. All rights reserved.</small>
+        <small>Developed and designed by Manuel Bermúdez. &copy;2023. All rights
+            reserved.</small>
     </footer>
     <script src="assets/js/main.js"></script>
     <script src="assets/js/fixed.js"></script>
