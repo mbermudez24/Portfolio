@@ -1,8 +1,4 @@
 #experience img {
-    background: white;
-    width: 150px;
-    height: 150px;
-    padding: 2rem;
     border: 5px solid var(--primary);
     border-radius: 25px;
     cursor: pointer;
@@ -13,6 +9,10 @@
     /* Parche CSS para mejorar el contraste de los bordes pixelados en pantallas HD */
     image-rendering: -webkit-optimize-contrast;
     image-rendering: crisp-edges;
+}
+
+.davinci {
+    background-color: #626c78;
 }
 
 #experience img:hover {
