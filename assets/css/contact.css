@@ -1,64 +1,84 @@
-form {
-    font-size: 1.2rem;
-}
-form label {
-    display: block;
-    width: 50%;
-    margin: 0 auto;
+/* Contenedor principal de la información */
+.contact__info {
+    text-align: center;
+    margin-bottom: 2.5rem;
 }
 
-input,
-textarea, input:focus,
-textarea:focus {
-    width: 100%;
-    padding: 1rem;
-    color: var(--black);
-    border: none;
-    background-color: rgba(0,0,0,0.1);
-    box-shadow: none;
-    cursor: pointer;
-    margin: 1rem 0 2rem;
+/* El texto de invitación */
+.contact__info p {
+    color: var(--white2);
+    /* Tu gris claro */
+    font-size: 1.1rem;
+    margin-bottom: 0.8rem;
 }
 
-
-textarea {
-    resize: none
+/* El enlace de tu correo directo */
+.contact__email {
+    color: var(--secondary);
+    /* Tu hermoso azul cian eléctrico */
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-block;
+    transition: color 0.3s ease, transform 0.3s ease;
 }
 
-form button {
-    background-color: var(--secondary);
+/* Efecto hover interactivo para el correo */
+.contact__email:hover {
     color: var(--white);
-    margin: 3rem;
-    border: none;
-    padding: 1rem;
-    border-radius: 15px;
-    cursor: pointer;
-    transition: background-color .3s ease;
+    /* Cambia a blanco al pasar el mouse */
+    transform: translateY(-2px);
+    /* Pequeño salto hacia arriba */
 }
 
-form button:hover {
-    background-color: var(--secondary-dark)
-}
-
-#social-media img {
-    border-radius: 10rem;
-    background-color: var(--white);
+/* Asegurar buen espacio para las redes sociales abajo */
+#social-media {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 1.5rem;
     transition: all ease .3s;
-    margin: 1rem;
 }
 
 #social-media a {
     text-decoration: none;
 }
 
-#linkedin:hover {
-    background-color: #0077b5;
+/* Estado normal: Ambos logos limpios y completamente blancos */
+#linkedin {
+    /* Convierte el azul de LinkedIn en blanco puro */
+    filter: brightness(0) invert(1);
 }
 
+#github {
+    /* Convierte el negro de GitHub en blanco puro */
+    filter: invert(1);
+}
+
+/* Transición común para ambos */
+#linkedin,
+#github {
+    width: 5rem;
+    height: 5rem;
+    object-fit: contain;
+    border-radius: 50%;
+    transition: filter 0.3s ease, background-color 0.3s ease;
+}
+
+/* --- Estados Hover --- */
+
+#linkedin:hover,
 #github:hover {
-    background-color: black;
-}
-#youtube:hover {
-    background-color: red;
+    transform: scale(1.1);
+    /* Efecto visual extra muy genial */
 }
 
+/* LinkedIn: Quita el filtro blanco para mostrar su color azul original */
+#linkedin:hover {
+    filter: none;
+}
+
+/* GitHub: Aplica el efecto invertido que creaste (círculo blanco con gato oscuro) */
+#github:hover {
+    filter: invert(0);
+}
