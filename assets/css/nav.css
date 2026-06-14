@@ -12,12 +12,12 @@
     display: flex;
     align-items: center;
     text-decoration: none;
-    color: var(--black);
+    color: var(--white);
 }
 
 #navbar div a:hover {
-    color: var(--white);
-    transition: color .3s ease, color .3s ease;
+    transform: scale(1.1);
+    transition: all .3s ease;
 }
 
 
@@ -35,16 +35,19 @@
     cursor: pointer;
 }
 
+#navbar button:hover {
+    transform: scale(1.1);
+    transition: all .3s ease;
+}
 
 #navbar.open button {
-    background-color: var(--black);
-    color: var(--white);    
+    color: var(--white);
     border-radius: 2rem;
 }
 
 #navbar ul {
-    background: linear-gradient(var(--primary),var(--primary-dark));
-    border-top: 1px solid rgba(255,255,255,0.1);
+    background: linear-gradient(var(--primary), var(--primary-dark));
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
     padding: 0;
     margin: 0;
     max-height: 0;
@@ -92,7 +95,3 @@
 #active {
     background-color: var(--primary-dark);
 }
-
-
-
-
