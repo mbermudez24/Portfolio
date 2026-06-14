@@ -6,7 +6,6 @@ body {
 }
 
 header,
-footer,
 section.even {
     color: var(--white);
 }
@@ -15,17 +14,17 @@ h3 {
     font-size: 2rem;
 }
 
-h2, h3, h4 {
+h2,
+h3,
+h4 {
     letter-spacing: 0.3rem;
 }
 
-h1, h3 {
+h1,
+h3 {
     text-transform: uppercase;
 }
 
 h4 {
     font-size: 1.5rem;
 }
-
-
-
