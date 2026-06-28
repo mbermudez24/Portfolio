@@ -1,19 +1,30 @@
+#portfolio div {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(230px, 1fr));
+}
+
+
 #portfolio button {
     display: block;
     position: relative;
     margin: 1rem auto;
-    max-width: 400px;
+    max-width: 380px;
+    width: 100%;
     overflow: hidden;
     box-shadow: 0 0 10px var(--gray2);
     padding: 0;
     border: none;
     cursor: zoom-in;
     border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
 }
 
 #portfolio img {
     display: block;
-    max-height: 300px;
+    max-height: 280px;
     transition: transform ease .3s;
 }
 
@@ -72,4 +83,44 @@
 #portfolio button:hover:after {
     top: 40%;
     opacity: .75;
+}
+
+@media (max-width: 576px) {
+
+    #portfolio div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* Centra los botones en la pantalla del celular */
+        gap: 1.5rem;
+        /* Separa un botón del otro verticalmente */
+    }
+
+    #portfolio button {
+        max-width: 320px;
+        /* Ancho ideal para pantallas de celular */
+        width: 100%;
+        height: auto;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow: hidden;
+        /* Asegura que la imagen respete los bordes redondeados */
+    }
+
+    #portfolio img {
+        /* 🌟 LA CORRECCIÓN CLAVE */
+        width: 100%;
+        /* Hace que la imagen ocupe TODO el ancho disponible del botón */
+        max-width: 100%;
+        /* Eliminamos el límite de 230px que causaba los marcos grises */
+        height: auto;
+        /* Deja que la altura se calcule sola en proporción */
+        aspect-ratio: 4 / 3;
+        /* Mantiene la proporción horizontal perfecta de tus capturas */
+        object-fit: cover;
+        /* Llena el contenedor de esquina a esquina de forma impecable */
+        display: block;
+    }
 }
