@@ -4,7 +4,10 @@
 
 #navbar div {
     display: flex;
+    align-items: center;
+    /* Esto alineará verticalmente el logo y los links */
     justify-content: space-between;
+    /* Mantiene el nombre a la izquierda y links a la derecha */
 }
 
 #navbar div a {
@@ -25,60 +28,36 @@
     margin-right: .5rem;
 }
 
-#navbar button {
-    background-color: transparent;
-    color: var(--white);
-    font-size: 1.5rem;
-    padding: .2rem .7rem;
-    margin: .7rem;
-    border: none;
-    cursor: pointer;
+.hidden {
+    display: none;
 }
 
-#navbar button:hover {
-    transform: scale(1.1);
-    transition: all .3s ease;
-}
-
-#navbar.open button {
-    color: var(--white);
-    border-radius: 2rem;
-}
-
-#navbar ul {
-    background: linear-gradient(var(--primary), var(--primary-dark));
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-    padding: 0;
+.links {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
     margin: 0;
-    max-height: 0;
-    transition: max-height .3s ease;
-    position: absolute;
-    width: 100%;
-    overflow: hidden;
-}
-
-#navbar.open ul {
-    max-height: 150px;
-}
-
-#navbar li {
-    list-style: none;
     padding: 0;
 }
-
-#navbar ul a {
-    display: block;
-    padding: 10px 15px;
-    text-decoration: none;
-    color: var(--white);
-    transition: color .3s ease, background-color .3s ease;
-}
-
 
 #navbar ul a:hover,
 #navbar ul a:focus {
     color: var(--black);
     background-color: var(--white);
+}
+
+#navbar li {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 0 1rem;
+    list-style: none;
+}
+
+#navbar ul a {
+    text-decoration: none;
+    color: var(--white);
+    transition: color .3s ease, background-color .3s ease;
 }
 
 .navbar-fixed {
@@ -94,4 +73,50 @@
 
 #active {
     background-color: var(--primary-dark);
+}
+
+@media (max-width: 576px) {
+    #navbar button {
+        display: block;
+        background-color: transparent;
+        color: var(--white);
+        font-size: 1.5rem;
+        padding: .2rem .7rem;
+        margin: .7rem;
+        border: none;
+        cursor: pointer;
+    }
+
+    #navbar button:hover {
+        transform: scale(1.1);
+        transition: all .3s ease;
+    }
+
+    #navbar.open button {
+        color: var(--white);
+        border-radius: 2rem;
+    }
+
+    #navbar ul {
+        flex-direction: column;
+        background: linear-gradient(var(--primary), var(--primary-dark));
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        padding: 0;
+        margin: 0;
+        max-height: 0;
+        transition: max-height .3s ease;
+        position: absolute;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    #navbar ul a {
+        display: block;
+        padding: 10px 15px;
+    }
+
+    #navbar.open ul {
+        max-height: 150px;
+    }
+
 }

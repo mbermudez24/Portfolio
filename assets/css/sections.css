@@ -25,7 +25,7 @@ footer {
 footer small {
     color: var(--white2);
     /* Tu variable de gris claro */
-    font-size: 0.85rem;
+    font-size: .9rem;
     /* Tamaño compacto y profesional */
     opacity: 0.6;
     /* Lo suaviza para que sea legible pero discreto */
@@ -47,4 +47,10 @@ section.even hr {
 
 section hr {
     margin-bottom: 5rem;
+}
+
+@media (max-width: 576px) {
+    footer small {
+        font-size: .7rem;
+    }
 }
