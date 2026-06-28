@@ -1,6 +1,6 @@
 #skillset>div {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(4, 1fr);
   gap: 2rem;
   margin: 0px 6rem;
   background-color: var(--white);
@@ -48,4 +48,11 @@
   border-width: 5px;
   border-style: solid;
   border-color: rgba(0, 0, 0, 0.75) transparent transparent transparent;
+}
+
+@media (max-width: 576px) {
+  #skillset>div {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 1rem;
+  }
 }
