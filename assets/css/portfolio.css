@@ -124,3 +124,25 @@
         display: block;
     }
 }
+
+@media (max-width: 992px) {
+    #portfolio div {
+        /* 🌟 THE CLASSIEST FIX: Switch from 3 columns to 2 columns */
+        grid-template-columns: repeat(2, minmax(230px, 1fr));
+        gap: 1.5rem;
+        /* Adds balanced spacing between the 2 columns */
+    }
+
+    #portfolio button {
+        /* Slightly adjust button width to fit perfectly in 2 columns */
+        max-width: 340px;
+    }
+
+    #portfolio img {
+        /* Ensure images scale fluidly in the new grid layout */
+        width: 100%;
+        height: auto;
+        aspect-ratio: 4 / 3;
+        object-fit: cover;
+    }
+}
