@@ -59,7 +59,7 @@
 #linkedin,
 #github {
     width: 5rem;
-    height: 5rem;
+    height: auto;
     object-fit: contain;
     border-radius: 50%;
     transition: filter 0.3s ease, background-color 0.3s ease;
@@ -81,4 +81,15 @@
 /* GitHub: Aplica el efecto invertido que creaste (círculo blanco con gato oscuro) */
 #github:hover {
     filter: invert(0);
+}
+
+@media (max-width: 576px) {
+    .contact__email {
+        font-size: 1.2rem;
+    }
+
+    #linkedin,
+    #github {
+        width: 3.5rem;
+    }
 }
