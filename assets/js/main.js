@@ -14,9 +14,7 @@ let queryMobile = window.matchMedia('(max-width: 576px)');
 
 function moveLinks(query) {
     if (query.matches) {
-        // Celular: Mueve el 'ul' al final del div, quedando justo debajo del botón ☰
         container.insertAdjacentElement("afterend", links);
-
         // También puedes usar: container.appendChild(links); (hace exactamente lo mismo)
     } else {
         // Escritorio: Mueve el 'ul' de regreso antes del botón ☰ para restaurar el diseño
